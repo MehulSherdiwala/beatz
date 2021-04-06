@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55af3570-6d78-4351-8b7f-4a21e3a30ccc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/color-schemes/color2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/color-schemes/color3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/color-schemes/color4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/color-schemes/color6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/fonts/slick-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/fonts/slickd41d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/jplayer.blue.monday.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/maudio.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/slick-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/alert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/audio_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/bars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/bars2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/bg1-dark.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/bg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/bg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/btn1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/btn2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/color-schemes/color2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/color-schemes/color3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/color-schemes/color4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/color-schemes/color5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/color-schemes/color6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/fonts/slick-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/fonts/slick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/fonts/slickd41d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/jplayer.blue.monday.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/maudio.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/slick-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/css/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/dt-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/add-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/adver1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/adver2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/album-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/author1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/author2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/author3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/author4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/banner-img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/bg5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/bg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/bg8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/bg9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/blog1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/blog3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/blog4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/blog5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/blog6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/blog7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/cm1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/donate-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/error-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/flickr1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/flickr2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/flickr5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/flickr6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/img9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/imgg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/imgg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/imgg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/imgg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/imgg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/imgg8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/imgg9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/large-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/large-img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/large-img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/main-banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/main-banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/main-banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/main-banner5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/main-banner6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/ms2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/ms3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/ms4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/ms5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/ms6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/music2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/music3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/music4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/music5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/news-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pager-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pl-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pl-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pl-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pl-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/post2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/post3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/pt-logo9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/slide-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/slide-img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/testi-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/vid-music.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/video-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/video1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/wd-post1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/resources/wd-post2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/setting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/shape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/shape2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/sv-shape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/vid-shape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/Flaticon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/Flaticon.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/Flaticond41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-brands-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/images/webfonts/fa-solid-900d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/js/all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/js/sammy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/media/AlbumArtSmall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/media/Folder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/media/Friendships.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/media/HVME-GOOSEBUMPS.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/media/HVME-GOOSEBUMPS_Extended.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/media/JONY-Love-Your-Voice.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/media/Lut_Gaye_Jubin_Nautiyal.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/media/Saiya_Ji.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/Flaticon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/Flaticon.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/Flaticond41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-brands-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-regular-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beatz/beatz/webfonts/fa-solid-900d41d.eot" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qFnmaXEWFxiJcE6IjuePXmE4SG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/index_audio.html" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/index_audio.html" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ASP.Net\BeatZ" />
+      <recent name="D:\ASP.Net\BeatZ\js" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index_new.html">
+    <configuration name="index_audio.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/BeatZ/index_audio.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index_new.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/BeatZ/index_new.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="routes.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/BeatZ/routes.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index_new.html" />
+        <item itemvalue="JavaScript Debug.index_audio.html" />
+        <item itemvalue="JavaScript Debug.routes.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55af3570-6d78-4351-8b7f-4a21e3a30ccc" name="Default Changelist" comment="" />
+      <created>1616684366198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616684366198</updated>
+      <workItem from="1616684367594" duration="663000" />
+      <workItem from="1616747693215" duration="594000" />
+      <workItem from="1617101513469" duration="593000" />
+      <workItem from="1617110534443" duration="538000" />
+      <workItem from="1617111095133" duration="1955000" />
+      <workItem from="1617168747029" duration="13000" />
+      <workItem from="1617169257196" duration="2282000" />
+      <workItem from="1617171845481" duration="1674000" />
+      <workItem from="1617174725132" duration="6475000" />
+      <workItem from="1617181530302" duration="4139000" />
+      <workItem from="1617353662357" duration="594000" />
+      <workItem from="1617693152394" duration="4383000" />
+    </task>
+    <task id="LOCAL-00001" summary="Routes">
+      <created>1616684817514</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616684817514</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Routes Done">
+      <created>1617177322034</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617177322034</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Index Updated">
+      <created>1617181786293</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617181786293</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Audio Control Added">
+      <created>1617182198115</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617182198115</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Routes" />
+    <MESSAGE value="Routes Done" />
+    <MESSAGE value="Index Updated" />
+    <MESSAGE value="Audio Control Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Audio Control Added" />
+  </component>
+</project>
