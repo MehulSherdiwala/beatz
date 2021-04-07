@@ -221,6 +221,7 @@
     <Content Include="home.html" />
     <Content Include="index.html" />
     <Content Include="login-register.html" />
+    <Content Include="login.aspx" />
     <Content Include="podcasts_content.html" />
     <Content Include="release_content.html" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
@@ -397,6 +398,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Classes\Admin.cs" />
+    <Compile Include="Classes\Connection.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -413,6 +415,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
