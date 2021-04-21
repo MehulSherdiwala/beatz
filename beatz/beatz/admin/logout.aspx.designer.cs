@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace beatz
+namespace beatz.admin
 {
 
 
-    public partial class admin
+    public partial class logout
     {
 
         /// <summary>

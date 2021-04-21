@@ -198,7 +198,22 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="admin.aspx" />
+    <Content Include="admin\add_album.aspx" />
+    <Content Include="admin\add_artist.aspx" />
+    <Content Include="admin\add_genre.aspx" />
+    <Content Include="admin\album.aspx" />
+    <Content Include="admin\artist.aspx" />
+    <Content Include="admin\delete_album.aspx" />
+    <Content Include="admin\delete_artist.aspx" />
+    <Content Include="admin\delete_genre.aspx" />
+    <Content Include="admin\edit_artist.aspx" />
+    <Content Include="admin\edit_album.aspx" />
+    <Content Include="admin\edit_genre.aspx" />
+    <Content Include="admin\genre.aspx" />
+    <Content Include="admin\index.aspx" />
+    <Content Include="admin\logout.aspx" />
+    <Content Include="admin_count.aspx" />
+    <Content Include="admin\login.aspx" />
     <Content Include="App_Data\beatz.mdf" />
     <Content Include="App_Data\beatz_log.ldf">
       <DependentUpon>beatz.mdf</DependentUpon>
@@ -217,6 +232,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="admin\adminMaster.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="home.html" />
     <Content Include="index.html" />
@@ -379,12 +395,124 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin.aspx.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
+    <Compile Include="admin\add_album.aspx.cs">
+      <DependentUpon>add_album.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin.aspx.designer.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
+    <Compile Include="admin\add_album.aspx.designer.cs">
+      <DependentUpon>add_album.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\add_artist.aspx.cs">
+      <DependentUpon>add_artist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add_artist.aspx.designer.cs">
+      <DependentUpon>add_artist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\add_genre.aspx.cs">
+      <DependentUpon>add_genre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add_genre.aspx.designer.cs">
+      <DependentUpon>add_genre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminMaster.Master.cs">
+      <DependentUpon>adminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminMaster.Master.designer.cs">
+      <DependentUpon>adminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\album.aspx.cs">
+      <DependentUpon>album.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\album.aspx.designer.cs">
+      <DependentUpon>album.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\artist.aspx.cs">
+      <DependentUpon>artist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\artist.aspx.designer.cs">
+      <DependentUpon>artist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\delete_album.aspx.cs">
+      <DependentUpon>delete_album.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\delete_album.aspx.designer.cs">
+      <DependentUpon>delete_album.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\delete_artist.aspx.cs">
+      <DependentUpon>delete_artist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\delete_artist.aspx.designer.cs">
+      <DependentUpon>delete_artist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\delete_genre.aspx.cs">
+      <DependentUpon>delete_genre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\delete_genre.aspx.designer.cs">
+      <DependentUpon>delete_genre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\edit_artist.aspx.cs">
+      <DependentUpon>edit_artist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\edit_artist.aspx.designer.cs">
+      <DependentUpon>edit_artist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\edit_album.aspx.cs">
+      <DependentUpon>edit_album.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\edit_album.aspx.designer.cs">
+      <DependentUpon>edit_album.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\edit_genre.aspx.cs">
+      <DependentUpon>edit_genre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\edit_genre.aspx.designer.cs">
+      <DependentUpon>edit_genre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\genre.aspx.cs">
+      <DependentUpon>genre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\genre.aspx.designer.cs">
+      <DependentUpon>genre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_count.aspx.cs">
+      <DependentUpon>admin_count.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_count.aspx.designer.cs">
+      <DependentUpon>admin_count.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -449,10 +577,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="admin\assets\" />
     <Folder Include="css\" />
     <Folder Include="images\" />
     <Folder Include="js\" />
     <Folder Include="media\" />
+    <Folder Include="uploads\" />
     <Folder Include="webfonts\" />
   </ItemGroup>
   <PropertyGroup>

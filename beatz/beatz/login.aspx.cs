@@ -32,6 +32,9 @@ namespace beatz
             if (rd.HasRows)
             {
                 Response.Write("Login successfull");
+            } else
+            {
+                Response.Write("Login Failed");
             }
 
             rd.Close(); 

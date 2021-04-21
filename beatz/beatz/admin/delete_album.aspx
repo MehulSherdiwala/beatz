@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="admin.aspx.cs" Inherits="beatz.admin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="delete_album.aspx.cs" Inherits="beatz.admin.delete_album" %>
 
 <!DOCTYPE html>
 

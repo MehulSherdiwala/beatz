@@ -41,7 +41,7 @@ namespace beatz.Classes
 
         public int pkInc(string field, string table)
         {
-            string query = "select max(" + field + ") as cnt from " + table;
+            string query = "select ISNULL( max(" + field + "), 0) as cnt from " + table;
             
             SqlDataReader rd = ExecuteDQL(query);
             int cnt = 0;

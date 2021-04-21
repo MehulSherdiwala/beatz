@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace beatz
 {
-    public partial class admin : System.Web.UI.Page
+    public partial class admin_count : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
