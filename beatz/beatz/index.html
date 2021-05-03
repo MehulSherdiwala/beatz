@@ -720,6 +720,10 @@
                                                                 <div class="jp-volume-bar-value"></div>
                                                             </div>
                                                             <button class="jp-mute" role="button" tabindex="0"><i class="fa fa-volume-up"></i></button>
+                                                            
+                                                        </div>
+                                                        <div class="jp-toggles">
+                                                            <button id="playlist" class="fa fa-th-list" aria-hidden="true"></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -759,7 +763,10 @@
     <script src="js/sammy.js" type="text/javascript" charset="utf-8"></script>
 
     <script>
-		$(".jp-playlist").hide();
+        $(".jp-playlist").hide()
+        $("#playlist").click(function () {
+            $(".jp-playlist").slideToggle();
+        });
     </script>
 
     <script type="text/javascript" charset="utf-8">
