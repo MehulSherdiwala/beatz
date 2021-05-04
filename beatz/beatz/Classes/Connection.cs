@@ -34,6 +34,11 @@ namespace beatz.Classes
             return cmd.ExecuteReader();
         }
 
+        public SqlCommand cmd(string query)
+        {
+            return new SqlCommand(query, con);
+        }
+
         public void Close()
         {
             con.Close();

@@ -52,13 +52,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./music.html">
+              <a class="nav-link" href="./music.aspx">
                 <i class="fas fa-music text-primary"></i>
                 <span class="nav-link-text">Music</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./feedback.html">
+              <a class="nav-link" href="./feedback.aspx">
                 <i class="fas fa-comment-dots text-pink"></i>
                 <span class="nav-link-text">Feedback</span>
               </a>

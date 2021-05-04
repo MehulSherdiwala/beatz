@@ -201,17 +201,21 @@
     <Content Include="admin\add_album.aspx" />
     <Content Include="admin\add_artist.aspx" />
     <Content Include="admin\add_genre.aspx" />
+    <Content Include="admin\add_music.aspx" />
     <Content Include="admin\album.aspx" />
     <Content Include="admin\artist.aspx" />
     <Content Include="admin\delete_album.aspx" />
     <Content Include="admin\delete_artist.aspx" />
     <Content Include="admin\delete_genre.aspx" />
+    <Content Include="admin\delete_music.aspx" />
     <Content Include="admin\edit_artist.aspx" />
     <Content Include="admin\edit_album.aspx" />
     <Content Include="admin\edit_genre.aspx" />
+    <Content Include="admin\edit_music.aspx" />
     <Content Include="admin\genre.aspx" />
     <Content Include="admin\index.aspx" />
     <Content Include="admin\logout.aspx" />
+    <Content Include="admin\music.aspx" />
     <Content Include="admin_count.aspx" />
     <Content Include="admin\login.aspx" />
     <Content Include="App_Data\beatz.mdf" />
@@ -416,6 +420,13 @@
     <Compile Include="admin\add_genre.aspx.designer.cs">
       <DependentUpon>add_genre.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\add_music.aspx.cs">
+      <DependentUpon>add_music.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add_music.aspx.designer.cs">
+      <DependentUpon>add_music.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\adminMaster.Master.cs">
       <DependentUpon>adminMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -458,6 +469,13 @@
     <Compile Include="admin\delete_genre.aspx.designer.cs">
       <DependentUpon>delete_genre.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\delete_music.aspx.cs">
+      <DependentUpon>delete_music.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\delete_music.aspx.designer.cs">
+      <DependentUpon>delete_music.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\edit_artist.aspx.cs">
       <DependentUpon>edit_artist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -479,6 +497,13 @@
     <Compile Include="admin\edit_genre.aspx.designer.cs">
       <DependentUpon>edit_genre.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\edit_music.aspx.cs">
+      <DependentUpon>edit_music.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\edit_music.aspx.designer.cs">
+      <DependentUpon>edit_music.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\genre.aspx.cs">
       <DependentUpon>genre.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -499,6 +524,13 @@
     </Compile>
     <Compile Include="admin\logout.aspx.designer.cs">
       <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\music.aspx.cs">
+      <DependentUpon>music.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\music.aspx.designer.cs">
+      <DependentUpon>music.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin_count.aspx.cs">
       <DependentUpon>admin_count.aspx</DependentUpon>
@@ -582,6 +614,7 @@
     <Folder Include="images\" />
     <Folder Include="js\" />
     <Folder Include="media\" />
+    <Folder Include="music\" />
     <Folder Include="uploads\" />
     <Folder Include="webfonts\" />
   </ItemGroup>
