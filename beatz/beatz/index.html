@@ -756,12 +756,12 @@
             </div>
         </div>
     </div>
-    <script src="js/all.min.js?version=3"></script>
+    <script src="js/all.min.js?version=4"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/sammy.js" type="text/javascript" charset="utf-8"></script>
 
     <script>
-        $(".jp-playlist").hide()
+        $(".jp-playlist").slideToggle();
         $("#playlist").click(function () {
             $(".jp-playlist").slideToggle();
         });
@@ -845,6 +845,38 @@
 				app.run()
 			});
 		})(jQuery);
+
+		$.ajax({
+		    url: 'music_queue.aspx/getQueue',
+		    method:'post',
+		    contentType: 'application/json',
+		    dataType: 'json',
+		    success:function(data){
+		        console.log(data);
+		        queue = [];
+		        for (let i in data['d']){
+		            queue.push({
+		                title: data['d'][i]["title"],
+		                mp3: data['d'][i]["mp3"],
+		                oga: data['d'][i]["oga"],
+		            })
+		        }
+		        console.log(queue);
+		        new jPlayerPlaylist({
+		            jPlayer: "#jquery_jplayer_1",
+		            cssSelectorAncestor: "#jp_container_1"
+		        }, queue, {
+		            swfPath: "js/jplayer",
+		            supplied: "mp3",
+		            wmode: "window",
+		            useStateClassSkin: !0,
+		            autoBlur: !1,
+		            smoothPlayBar: !0,
+		            keyEnabled: !0
+		        })
+		    }
+		})
+		
 
     </script>
 </body>
