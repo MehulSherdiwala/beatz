@@ -11,7 +11,7 @@ namespace beatz.admin
 {
 
 
-    public partial class add_playlist
+    public partial class edit_playlist
     {
 
         /// <summary>
@@ -22,6 +22,15 @@ namespace beatz.admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_name;
+
+        /// <summary>
+        /// playlist_img control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image playlist_img;
 
         /// <summary>
         /// fu_image control.
@@ -42,21 +51,21 @@ namespace beatz.admin
         protected global::System.Web.UI.WebControls.Label msg;
 
         /// <summary>
-        /// table control.
+        /// txt_id control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl table;
+        protected global::System.Web.UI.WebControls.HiddenField txt_id;
 
         /// <summary>
-        /// addPlaylist control.
+        /// editPlaylist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addPlaylist;
+        protected global::System.Web.UI.WebControls.Button editPlaylist;
     }
 }

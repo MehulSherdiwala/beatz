@@ -210,14 +210,17 @@
     <Content Include="admin\delete_artist.aspx" />
     <Content Include="admin\delete_genre.aspx" />
     <Content Include="admin\delete_music.aspx" />
+    <Content Include="admin\delete_playlist.aspx" />
     <Content Include="admin\edit_artist.aspx" />
     <Content Include="admin\edit_album.aspx" />
     <Content Include="admin\edit_genre.aspx" />
     <Content Include="admin\edit_music.aspx" />
+    <Content Include="admin\edit_playlist.aspx" />
     <Content Include="admin\genre.aspx" />
     <Content Include="admin\index.aspx" />
     <Content Include="admin\logout.aspx" />
     <Content Include="admin\music.aspx" />
+    <Content Include="admin\playlist.aspx" />
     <Content Include="admin_count.aspx" />
     <Content Include="admin\login.aspx" />
     <Content Include="App_Data\beatz1.mdf" />
@@ -486,6 +489,13 @@
     <Compile Include="admin\delete_music.aspx.designer.cs">
       <DependentUpon>delete_music.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\delete_playlist.aspx.cs">
+      <DependentUpon>delete_playlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\delete_playlist.aspx.designer.cs">
+      <DependentUpon>delete_playlist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\edit_artist.aspx.cs">
       <DependentUpon>edit_artist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -514,6 +524,13 @@
     <Compile Include="admin\edit_music.aspx.designer.cs">
       <DependentUpon>edit_music.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\edit_playlist.aspx.cs">
+      <DependentUpon>edit_playlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\edit_playlist.aspx.designer.cs">
+      <DependentUpon>edit_playlist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\genre.aspx.cs">
       <DependentUpon>genre.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -541,6 +558,13 @@
     </Compile>
     <Compile Include="admin\music.aspx.designer.cs">
       <DependentUpon>music.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\playlist.aspx.cs">
+      <DependentUpon>playlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\playlist.aspx.designer.cs">
+      <DependentUpon>playlist.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin_count.aspx.cs">
       <DependentUpon>admin_count.aspx</DependentUpon>

@@ -32,7 +32,7 @@ namespace beatz.admin
                 html.Append("<td> " + rd["genre"] + " </td>");
                 html.Append("<td>" + rd["artist"] + "</td>");
                 html.Append("<td>" + rd["album"] + "</td>");
-                html.Append("<td>" + DateTime.ParseExact(rd["created_at"].ToString(), "dd-MM-yyyy hh.mm.ss tt", null).ToString("dd-MM-yyyy") + "</td>");
+                html.Append("<td>" + string.Format("{0:dd-MMM-yyyy}", DateTime.Parse(rd["created_at"].ToString())) + "</td>");
                 html.Append("<td><a href='edit_music.aspx?id=" + rd["music_id"] + "' class='btn btn-sm btn-success'><i class='fa fa-pencil-alt'></i></a> <a href='delete_music.aspx?id=" + rd["music_id"] + "' class='btn btn-sm btn-danger'><i class='fa fa-trash-alt'></i></a></td>");
                 html.Append("</tr>");
             }

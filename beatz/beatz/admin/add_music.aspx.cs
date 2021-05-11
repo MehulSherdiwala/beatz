@@ -29,7 +29,7 @@ namespace beatz.admin
                 ddl_genre.Items.Insert(0, "Select");
                 rd.Close();
 
-                query = "select album_id, album_name from album";
+                query = "select album_id, album_name from album where deleted_at IS NULL";
                 rd = con.ExecuteDQL(query);
                 ddl_album.DataSource = rd;
                 ddl_album.DataTextField = "album_name";
@@ -37,7 +37,7 @@ namespace beatz.admin
                 ddl_album.DataBind();
                 ddl_album.Items.Insert(0, "Select");
                 rd.Close();
-                query = "select artist_id, artist_name from artist";
+                query = "select artist_id, artist_name from artist where deleted_at IS NULL";
                 SqlCommand c = con.cmd(query);
                 artist_box.DataSource = c.ExecuteReader();
                 artist_box.DataTextField = "artist_name";
