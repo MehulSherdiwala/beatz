@@ -26,7 +26,7 @@ namespace beatz.admin
                 html.Append("<tr>");
                 html.Append("<td><span class='mr-4'><span class='status'>" + rd["album_id"] + "</span></span></td>");
                 html.Append("<th scope='row'><div class='media align-items-center'><a href = '#' class='avatar rounded-circle mr-3'><img alt = 'Image placeholder' src='../uploads/" + rd["album_image"] + "'></a><div class='media-body'><span class='name mb-0 text-sm'>" + rd["album_name"] + "</span></div></div></th>");
-                html.Append("<td class='budget'> " + DateTime.ParseExact(rd["created_at"].ToString(), "dd-MM-yyyy hh.mm.ss tt", null).ToString("dd-MM-yyyy") + " </td>");
+                html.Append("<td class='budget'> " + string.Format("{0:dd-MMM-yyyy}", DateTime.Parse(rd["created_at"].ToString())) + " </td>");
                 html.Append("<td><a href='edit_album.aspx?id=" + rd["album_id"] + "' class='btn btn-sm btn-success'><i class='fa fa-pencil-alt'></i></a> <a href='delete_album.aspx?id=" + rd["album_id"] + "' class='btn btn-sm btn-danger'><i class='fa fa-trash-alt'></i></a></td>");
                 html.Append("</tr>");
             }

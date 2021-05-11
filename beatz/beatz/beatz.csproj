@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -202,6 +203,7 @@
     <Content Include="admin\add_artist.aspx" />
     <Content Include="admin\add_genre.aspx" />
     <Content Include="admin\add_music.aspx" />
+    <Content Include="admin\add_playlist.aspx" />
     <Content Include="admin\album.aspx" />
     <Content Include="admin\artist.aspx" />
     <Content Include="admin\delete_album.aspx" />
@@ -218,9 +220,9 @@
     <Content Include="admin\music.aspx" />
     <Content Include="admin_count.aspx" />
     <Content Include="admin\login.aspx" />
-    <Content Include="App_Data\beatz.mdf" />
-    <Content Include="App_Data\beatz_log.ldf">
-      <DependentUpon>beatz.mdf</DependentUpon>
+    <Content Include="App_Data\beatz1.mdf" />
+    <Content Include="App_Data\beatz1_log.ldf">
+      <DependentUpon>beatz1.mdf</DependentUpon>
     </Content>
     <Content Include="authors_content.html" />
     <Content Include="blogs_content.html" />
@@ -427,6 +429,13 @@
     </Compile>
     <Compile Include="admin\add_music.aspx.designer.cs">
       <DependentUpon>add_music.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\add_playlist.aspx.cs">
+      <DependentUpon>add_playlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add_playlist.aspx.designer.cs">
+      <DependentUpon>add_playlist.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\adminMaster.Master.cs">
       <DependentUpon>adminMaster.Master</DependentUpon>
