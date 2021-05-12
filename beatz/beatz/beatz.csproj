@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -202,25 +203,29 @@
     <Content Include="admin\add_artist.aspx" />
     <Content Include="admin\add_genre.aspx" />
     <Content Include="admin\add_music.aspx" />
+    <Content Include="admin\add_playlist.aspx" />
     <Content Include="admin\album.aspx" />
     <Content Include="admin\artist.aspx" />
     <Content Include="admin\delete_album.aspx" />
     <Content Include="admin\delete_artist.aspx" />
     <Content Include="admin\delete_genre.aspx" />
     <Content Include="admin\delete_music.aspx" />
+    <Content Include="admin\delete_playlist.aspx" />
     <Content Include="admin\edit_artist.aspx" />
     <Content Include="admin\edit_album.aspx" />
     <Content Include="admin\edit_genre.aspx" />
     <Content Include="admin\edit_music.aspx" />
+    <Content Include="admin\edit_playlist.aspx" />
     <Content Include="admin\genre.aspx" />
     <Content Include="admin\index.aspx" />
     <Content Include="admin\logout.aspx" />
     <Content Include="admin\music.aspx" />
+    <Content Include="admin\playlist.aspx" />
     <Content Include="admin_count.aspx" />
     <Content Include="admin\login.aspx" />
-    <Content Include="App_Data\beatz.mdf" />
-    <Content Include="App_Data\beatz_log.ldf">
-      <DependentUpon>beatz.mdf</DependentUpon>
+    <Content Include="App_Data\beatz1.mdf" />
+    <Content Include="App_Data\beatz1_log.ldf">
+      <DependentUpon>beatz1.mdf</DependentUpon>
     </Content>
     <Content Include="authors_content.html" />
     <Content Include="blogs_content.html" />
@@ -429,6 +434,13 @@
     <Compile Include="admin\add_music.aspx.designer.cs">
       <DependentUpon>add_music.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\add_playlist.aspx.cs">
+      <DependentUpon>add_playlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add_playlist.aspx.designer.cs">
+      <DependentUpon>add_playlist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\adminMaster.Master.cs">
       <DependentUpon>adminMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -478,6 +490,13 @@
     <Compile Include="admin\delete_music.aspx.designer.cs">
       <DependentUpon>delete_music.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\delete_playlist.aspx.cs">
+      <DependentUpon>delete_playlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\delete_playlist.aspx.designer.cs">
+      <DependentUpon>delete_playlist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\edit_artist.aspx.cs">
       <DependentUpon>edit_artist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -506,6 +525,13 @@
     <Compile Include="admin\edit_music.aspx.designer.cs">
       <DependentUpon>edit_music.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\edit_playlist.aspx.cs">
+      <DependentUpon>edit_playlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\edit_playlist.aspx.designer.cs">
+      <DependentUpon>edit_playlist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\genre.aspx.cs">
       <DependentUpon>genre.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -533,6 +559,13 @@
     </Compile>
     <Compile Include="admin\music.aspx.designer.cs">
       <DependentUpon>music.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\playlist.aspx.cs">
+      <DependentUpon>playlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\playlist.aspx.designer.cs">
+      <DependentUpon>playlist.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin_count.aspx.cs">
       <DependentUpon>admin_count.aspx</DependentUpon>

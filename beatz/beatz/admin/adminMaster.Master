@@ -58,6 +58,12 @@
               </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="./playlist.aspx">
+                <i class="fas fa-music text-primary"></i>
+                <span class="nav-link-text">Playlist</span>
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="./feedback.aspx">
                 <i class="fas fa-comment-dots text-pink"></i>
                 <span class="nav-link-text">Feedback</span>
@@ -139,7 +145,15 @@
   <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
   <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
   <script src="assets/js/script.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+        </script>
 </body>
 </html>
 

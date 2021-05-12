@@ -1,20 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-using System.Data.SqlClient;
 using beatz.Classes;
-using System.Text;
-
 namespace beatz.admin
 {
-    public partial class music : System.Web.UI.Page
+    public partial class add_playlist : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["aid"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
+
             Connection con = new Connection();
             con.Open();
             StringBuilder html = new StringBuilder();
@@ -31,13 +35,40 @@ namespace beatz.admin
                 html.Append("<th scope='row'><div class='media align-items-center'><a href = '#' class='avatar rounded-circle mr-3'><img alt = 'Image placeholder' src='../uploads/" + rd["image"] + "'></a><div class='media-body'><span class='name mb-0 text-sm'>" + rd["music_name"] + "</span></div></div></th>");
                 html.Append("<td> " + rd["genre"] + " </td>");
                 html.Append("<td>" + rd["artist"] + "</td>");
-                html.Append("<td>" + rd["album"] + "</td>");
-                html.Append("<td>" + string.Format("{0:dd-MMM-yyyy}", DateTime.Parse(rd["created_at"].ToString())) + "</td>");
-                html.Append("<td><a href='edit_music.aspx?id=" + rd["music_id"] + "' class='btn btn-sm btn-success'><i class='fa fa-pencil-alt'></i></a> <a href='delete_music.aspx?id=" + rd["music_id"] + "' class='btn btn-sm btn-danger'><i class='fa fa-trash-alt'></i></a></td>");
                 html.Append("</tr>");
             }
             table.InnerHtml = html.ToString();
             con.Close();
         }
+
+        protected void addPlaylist_Click(object sender, EventArgs e)
+        {
+            if (fu_image.HasFile)
+            {
+                string img_name = fu_image.FileName;
+                fu_image.PostedFile.SaveAs(Server.MapPath("~/uploads/" + img_name));
+
+                Connection con = new Connection();
+                con.Open();
+
+                string playlist_name = txt_name.Text;
+                int id = con.pkInc("playlist_id", "playlist");
+                DateTime date = DateTime.Now;
+                string format = "yyyy-MM-dd";
+
+                string query = "insert into playlist(playlist_id, playlist_name, playlist_image, created_at) values(" + id + ", '" + playlist_name + "', '" + img_name + "', '" + date.ToString(format) + "' )";
+                Response.Write(query);
+                int x = con.ExecuteDML(query);
+                if (x > 0)
+                {
+                    Response.Redirect("playlist.aspx");
+                }
+                else
+                {
+                    msg.Text = "Can't add Playlist!";
+                }
+            }
+        }
     }
 }
+
