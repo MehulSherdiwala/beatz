@@ -1,0 +1,99 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="genre_list.aspx.cs" Inherits="beatz.genre_list" %>
+
+<!-- <section id="content">
+	<section class="main-banner overlay">
+		<div class="container">
+			<div class="banner-text text-center">
+				<h2>Romantic</strong></h2>
+				<p>Find your favourite Romantic song here</p>
+			</div>
+		</div>
+	</section>
+	<section class="block pt-0">
+		<section class="pb-0">
+			<div class="container">
+				<div class="podcast-series">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="pod-series">
+								<div class="pod-info">
+									<div class="d-flex align-items-center justify-content-around">
+									    <img class="img-thumbnail" style="height:20vh;" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+									    <h3 style="text-align: center;">Romantic</h3>
+									    <h4 style="text-align: center;">20 Songs</h4>
+                                    </div>
+                                    
+										<div id="togglebutton" class="border shadow border-success p-3 rounded-circle cursor-pointer text-success"><i id="play" class="fa fa-play" aria-hidden="true"></i></div>
+									 <div class="d-flex justify-content-center">
+									    <h4 style="text-align: center; position: relative; cursor: pointer;bottom: 0;right: 0" data-playlist="<%= Request.QueryString["playlist"] %>" class="download play_playlist"><i class="fa fa-play"></i></h4>
+                                    </div> 
+									<ul class="songs-list d-flex flex-column m-5 align-items-around" runat="server">
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+-->
+
+<div class="container">
+    <div class="podcast-series">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="pod-series">
+                    <div class="pod-info">
+						<div class="d-flex align-items-center justify-content-around">
+						<asp:image runat="server" ID="thumbnail" class="img-thumbnail" style="height:20vh;"></asp:image>
+                        <div class="pod-info">
+						<h3 style="text-align: center;">
+                            <asp:label runat="server" ID="playlist_name" text=""></asp:label> 
+						</h3>
+                        <h4 style="text-align: center;">
+                            <asp:label runat="server" ID="song_count" text=""></asp:label> 
+                        </h4>
+					</div>
+					<div id="togglebutton" style="cursor:pointer" class="border shadow border-success p-3 rounded-circle text-success play_playlist"  data-playlist="<%= Request.QueryString["genre"] %>"><i id="play" class="fa fa-play" aria-hidden="true"></i></div>
+					</div>
+                        <ul class="d-flex flex-column m-5 align-items-around" id="song_list" runat="server">
+                            <li class="my-4">
+                                <div class="d-flex justify-content-around">
+                                <div class="mm-audio">
+                                                        
+                                        <audio controls src="http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"></audio>
+                                                        
+                                </div>
+                                <div class="d-flex flex-column mx-2 align-items-center"> 
+                                <p class="h4">The Moorditj Mag Podcast: Ep #20</p>
+                                <p>Shreya ghoshal
+                                                    
+                                </p>
+                            </div>
+							<p>3:04</p>
+                            </div>
+                            </li>
+                            <li class="my-4">
+                                <div class="d-flex justify-content-around">
+                                <div class="mm-audio">
+                                    <span data-music='4' class='download play_playlist'><i class='fa fa-play'></i></span>
+                                </div>
+                                <div class="d-flex flex-column mx-2 align-items-center"> 
+                                <p class="h4">The Moorditj Mag Podcast: Ep #20</p>
+                                <p>Shreya ghoshal
+                                                    
+                                </p>
+                            </div>
+							<p></p>
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

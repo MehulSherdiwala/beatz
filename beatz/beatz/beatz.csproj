@@ -223,16 +223,21 @@
     <Content Include="admin\playlist.aspx" />
     <Content Include="admin_count.aspx" />
     <Content Include="admin\login.aspx" />
+    <Content Include="album.aspx" />
+    <Content Include="album_list.aspx" />
     <Content Include="App_Data\beatz1.mdf" />
     <Content Include="App_Data\beatz1_log.ldf">
       <DependentUpon>beatz1.mdf</DependentUpon>
     </Content>
+    <Content Include="artist.aspx" />
+    <Content Include="artist_list.aspx" />
     <Content Include="authors_content.html" />
     <Content Include="blogs_content.html" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="create_playlist.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -243,7 +248,11 @@
     </Content>
     <Content Include="admin\adminMaster.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="genre.aspx" />
+    <Content Include="genre.html" />
+    <Content Include="genre_list.aspx" />
     <Content Include="home.html" />
+    <Content Include="index.aspx" />
     <Content Include="index.html" />
     <Content Include="login-register.html" />
     <Content Include="login.aspx" />
@@ -286,6 +295,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="user_playlist.aspx" />
+    <Content Include="user_playlist_list.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -581,6 +592,20 @@
     <Compile Include="admin\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="album.aspx.cs">
+      <DependentUpon>album.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="album.aspx.designer.cs">
+      <DependentUpon>album.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="album_list.aspx.cs">
+      <DependentUpon>album_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="album_list.aspx.designer.cs">
+      <DependentUpon>album_list.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -592,6 +617,20 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="artist.aspx.cs">
+      <DependentUpon>artist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="artist.aspx.designer.cs">
+      <DependentUpon>artist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="artist_list.aspx.cs">
+      <DependentUpon>artist_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="artist_list.aspx.designer.cs">
+      <DependentUpon>artist_list.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Admin.cs" />
     <Compile Include="Classes\Connection.cs" />
     <Compile Include="Classes\Playlist.cs" />
@@ -603,6 +642,13 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="create_playlist.aspx.cs">
+      <DependentUpon>create_playlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="create_playlist.aspx.designer.cs">
+      <DependentUpon>create_playlist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -610,8 +656,29 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="genre.aspx.cs">
+      <DependentUpon>genre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="genre.aspx.designer.cs">
+      <DependentUpon>genre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="genre_list.aspx.cs">
+      <DependentUpon>genre_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="genre_list.aspx.designer.cs">
+      <DependentUpon>genre_list.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -651,6 +718,20 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="user_playlist.aspx.cs">
+      <DependentUpon>user_playlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_playlist.aspx.designer.cs">
+      <DependentUpon>user_playlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_playlist_list.aspx.cs">
+      <DependentUpon>user_playlist_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_playlist_list.aspx.designer.cs">
+      <DependentUpon>user_playlist_list.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

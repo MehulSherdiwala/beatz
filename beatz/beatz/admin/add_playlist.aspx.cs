@@ -31,7 +31,7 @@ namespace beatz.admin
             while (rd.Read())
             {
                 html.Append("<tr>");
-                html.Append("<th>" + rd["music_id"] + "</th>");
+                html.Append("<th> <input type='checkbox' name='music_id' value='" + rd["music_id"] + "' /></th>");
                 html.Append("<th scope='row'><div class='media align-items-center'><a href = '#' class='avatar rounded-circle mr-3'><img alt = 'Image placeholder' src='../uploads/" + rd["image"] + "'></a><div class='media-body'><span class='name mb-0 text-sm'>" + rd["music_name"] + "</span></div></div></th>");
                 html.Append("<td> " + rd["genre"] + " </td>");
                 html.Append("<td>" + rd["artist"] + "</td>");
@@ -59,6 +59,14 @@ namespace beatz.admin
                 string query = "insert into playlist(playlist_id, playlist_name, playlist_image, created_at) values(" + id + ", '" + playlist_name + "', '" + img_name + "', '" + date.ToString(format) + "' )";
                 Response.Write(query);
                 int x = con.ExecuteDML(query);
+                
+                string[] music_id = Request.Form["music_id"].Split(',');
+                for (int i=0; i< music_id.Length; i++)
+                {
+                    int pm_id = con.pkInc("playlist_music_id", "playlist_musics");
+                    query = "insert into playlist_musics(playlist_music_id, music_id, music_index, playlist_id) values(" + pm_id + ", " + music_id[i] + ", " + (i+1) + ", " + id + " )";
+                    con.ExecuteDML(query);
+                }
                 if (x > 0)
                 {
                     Response.Redirect("playlist.aspx");
@@ -67,6 +75,7 @@ namespace beatz.admin
                 {
                     msg.Text = "Can't add Playlist!";
                 }
+                con.Close();
             }
         }
     }

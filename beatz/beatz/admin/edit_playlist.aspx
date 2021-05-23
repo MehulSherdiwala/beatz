@@ -38,6 +38,22 @@
                             <asp:FileUpload ID="fu_image" CssClass="form-control" runat="server" />
                         </div>
                         </div>
+                        <div class="row w-100">
+                            <div class="col-lg-12">
+                            <table id="example" class="table table-striped table-bordered" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Name</th>
+                                        <th>Genre</th>
+                                        <th>Artist</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table" runat="server">
+                               
+                                </tbody>
+                            </table>
+                            </div>
                         <div class="row flex justify-content-center text-danger">
                             <asp:Label ID="msg" runat="server" Text=""></asp:Label>
                         </div>

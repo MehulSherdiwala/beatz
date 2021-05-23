@@ -66,12 +66,12 @@
                                             <asp:TextBox ID="log_email" runat="server" placeholder="Email Address" class="form-control"></asp:TextBox>
 									    </div>
 									    <div class="form-group">
-                                            <asp:TextBox ID="log_password" runat="server" placeholder="Password" class="form-control"></asp:TextBox>
+                                            <asp:TextBox ID="log_password" runat="server" placeholder="Password" class="form-control" TextMode="Password"></asp:TextBox>
 									    </div>
 									    <div class="form-group">
+										    <a href="#" title="">Forget a Password</a>
                                             <asp:Button ID="Button1" runat="server" Text="Login " class="btn-default" OnClick="Button1_Click" />
 										
-										    <a href="#" title="">Forget a Password</a>
 									    </div>
 							    </div><!--login end-->
 						    </div>
@@ -93,7 +93,7 @@
                                             <asp:TextBox ID="reg_phone" placeholder="Phone Number" class="form-control" runat="server"></asp:TextBox>
 									    </div>
 									    <div class="form-group">
-                                            <asp:TextBox ID="reg_password" placeholder="Password" class="form-control" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="reg_password" placeholder="Password" class="form-control" runat="server" TextMode="Password"></asp:TextBox>
 									    </div>
 									    <div class="form-group">
                                             <asp:TextBox ID="reg_conf_password" placeholder="Confirm Password" class="form-control" runat="server"></asp:TextBox>

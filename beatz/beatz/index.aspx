@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="beatz.index" %>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -91,7 +92,7 @@
                             </ul>
                         </div>
                         <div class="col-xl-4 col-lg-5 col-md-6 mll-auto">
-                            <a href="login-register.html" title="" class="login"><i class="flaticon-user"></i>Login or Register</a>
+                            <a href="login.aspx" title="" class="login"><i class="flaticon-user"></i>Login or Register</a>
                             <ul class="social-links">
                                 <li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#" title=""><i class="fab fa-twitter"></i></a></li>
@@ -111,12 +112,11 @@
                         <nav>
                             <ul>
                                 <li><a href="#/home" class="home">Home</a></li>
-                                <li><a href="#/blog" class="blogs">Blogs</a></li>
-                                <li><a href="#/release" class="release">Latest Releases</a></li>
-                                <li><a href="#/authors" class="authors">Artists</a></li>
+                                <li><a href="#/artist" class="authors">Artists</a></li>
                                 <li><a href="#/album">Albums</a></li>
                                 <li><a href="#/genre">Genre</a></li>
-                                <li><a href="#/podcasts" class="podcasts">Podcasts</a></li>
+                                <li><a href="#/create_playlist">Craete Playlist</a></li>
+                                <li><a href="#/user_playlist">User Playlist</a></li>
                             </ul>
                         </nav>
                         <a href="#" title="" id="toggle" class="menu-btn"><img src="images/bars.png" alt=""></a>
@@ -131,12 +131,9 @@
             </a>
             <ul class="mb-menu">
                 <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#release">Latest Releases</a></li>
                 <li><a href="#">Artists</a></li>
                 <li><a href="#">Albums</a></li>
                 <li><a href="#">Genre</a></li>
-                <li><a href="#">Podcasts</a></li>
             </ul>
 
         </div>
@@ -769,8 +766,32 @@
     <script src="js/all.min.js?version=4"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/sammy.js" type="text/javascript" charset="utf-8"></script>
-
-    <script>
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    
+	<script type="text/javascript" charset="utf-8">
+	    $(document).ready(function() {
+		    $('#example').DataTable(
+			     {    
+		      "aLengthMenu": [[5, 10, 25, -1], [5, 10, 25, "All"]],
+			    "iDisplayLength": 5
+		       } 
+			    );
+	    } );
+	    $(document).on('click',"#togglebutton",function(){
+	        $("#play").toggleClass("fa-play");
+	        $("#play").toggleClass("fa-pause");
+	    });
+	
+	
+	    function checkAll(bx) {
+	      var cbs = document.getElementsByTagName('input');
+	      for(var i=0; i < cbs.length; i++) {
+		    if(cbs[i].type == 'checkbox') {
+		      cbs[i].checked = bx.checked;
+		    }
+	      }
+	    }
         $(".jp-playlist").slideToggle();
         $("#playlist").click(function () {
             $(".jp-playlist").slideToggle();
@@ -814,44 +835,93 @@
             })
 			var app = $.sammy(function() {
 
-				this.get('#/', function() {
-					$('#main').text('');
+			    this.get('#/', function() {
+			        $("#content").load("home.html");
 				});
 
-				this.get('#/home', async function() {
-					// const con = await fetch("home.html");
-					// const res = await con.json();
-					//
-					// console.log(res);
+				this.get('#/home', function() {
 					$("#content").load("home.html");
 
 				});
-				this.get('#/blog', async function() {
-					// const con = await fetch("blogs_content.html");
-					// const res = await con.json();
-					$("#content").load("blogs_content.html");
-					// console.log(con);
+				this.get('#/create_playlist', function() {
+				    $("#content").load("create_playlist.aspx");
+                    
+				    $(document).on('click', "#submit", function(){
+				        let cb = $(".music");
+				        let name = $("#playlist_name").val();
+				        let user_id = $("#user_id").val();
+				        let ar = [];
+				        let j = 0 ;
+				        for(let i = 0;i <cb.length;i++){
+				            if (cb[i].checked){
+				                ar[j] = cb[i].value;
+				                j++;
+				            }
+				        }
+				        $.ajax({
+				            url: 'create_playlist.aspx/savePlaylist',
+				            method:'post',
+				            contentType: 'application/json',
+				            data: '{name:"' + name + '", id:"' + ar.join("-") + '", user_id:' + user_id + '}',
+				            dataType: 'json',
+				            success:function(data){
+				                console.log(data)
+				                if(data['d']== null){
+				                    window.location.hash = "/user_playlist";
+				                }
+				            }
+				        })
+				    })
+				});
+				this.get('#/user_playlist', function() {
+				    $("#content").load("user_playlist.aspx");
 
 				});
-				this.get('#/release', function() {
-
-					$.ajax({
-						url: 'admin.aspx/getAdmins',
-						method:'post',
-						contentType: 'application/json',
-						data: '{aid:' + 1 + '}',
-						dataType: 'json',
-						success:function(data){
-							console.log(data)
-						}
-					})
-				});
-				this.get('#/authors', function() {
-					$("#content").load("authors_content.html");
-
-				});
-				this.get('#/podcasts', function() {
-					$("#content").load("podcasts_content.html");
+                
+				this.get('#/user_playlist/:id', function(context) {
+				    $.ajax({
+				        url: "/user_playlist_list.aspx?playlist=" + context.params.id,
+				        success:function(res){
+				            $("#content").html(res);
+				            $(".play_playlist").on('click', function(){
+				                $.ajax({
+				                    url: 'music_queue.aspx/getUserPlaylistQueue',
+				                    method:'post',
+				                    contentType: 'application/json',
+				                    dataType: 'json',
+				                    data: '{playlist_id:' + $(this).data("playlist") + '}',
+				                    success:function(data){
+				                        queue = [];
+				                        for (let i in data['d']){
+				                            queue.push({
+				                                title: data['d'][i]["title"],
+				                                mp3: data['d'][i]["mp3"],
+				                                oga: data['d'][i]["oga"],
+				                            })
+				                        }
+				                        playlist.setPlaylist(queue);
+				                    }
+				                })
+				            });
+				            $(".play_music").on('click', function(){
+				                $.ajax({
+				                    url: 'music_queue.aspx/getMusicQueue',
+				                    method:'post',
+				                    contentType: 'application/json',
+				                    dataType: 'json',
+				                    data: '{music_id:' + $(this).data("music") + '}',
+				                    success:function(data){
+				                        
+				                        playlist.setPlaylist([{
+				                            title: data['d']["title"],
+				                            mp3: data['d']["mp3"],
+				                            oga: data['d']["oga"],
+				                        }]);
+				                    }
+				                })
+				            });
+				        }
+				    })
 
 				});
 				this.get('#/genre', function() {
@@ -860,24 +930,18 @@
 				});
 				this.get('#/genre/:id', function(context) {
 					console.log(context.params.id);
-
-					//const res = await fetch("genre.aspx");
-					//const json = await res.json();
-				    //console.log(res);
-
 					$.ajax({
-					    url: "/genre_list.aspx?playlist=" + context.params.id,
+					    url: "/genre_list.aspx?genre=" + context.params.id,
 					    success:function(res){
 					        $("#content").html(res);
 					        $(".play_playlist").on('click', function(){
 					            $.ajax({
-					                url: 'music_queue.aspx/getPlaylistQueue',
+					                url: 'music_queue.aspx/getGenrePlaylistQueue',
 					                method:'post',
 					                contentType: 'application/json',
 					                dataType: 'json',
-					                data: '{playlist_id:' + $(this).data("playlist") + '}',
+					                data: '{genre_id:' + $(this).data("playlist") + '}',
 					                success:function(data){
-					                    console.log(data);
 					                    queue = [];
 					                    for (let i in data['d']){
 					                        queue.push({
@@ -886,13 +950,135 @@
 					                            oga: data['d'][i]["oga"],
 					                        })
 					                    }
-					                    console.log(queue);
 					                    playlist.setPlaylist(queue);
+					                }
+					            })
+					        });
+					        $(".play_music").on('click', function(){
+					            $.ajax({
+					                url: 'music_queue.aspx/getMusicQueue',
+					                method:'post',
+					                contentType: 'application/json',
+					                dataType: 'json',
+					                data: '{music_id:' + $(this).data("music") + '}',
+					                success:function(data){
+				                        
+					                    playlist.setPlaylist([{
+					                        title: data['d']["title"],
+					                        mp3: data['d']["mp3"],
+					                        oga: data['d']["oga"],
+					                    }]);
+					                    playlist.play();
 					                }
 					            })
 					        });
 					    }
 					})
+
+				});
+				this.get('#/album', function() {
+				    $("#content").load("album.aspx");
+
+				});
+				this.get('#/album/:id', function(context) {
+				    console.log(context.params.id);
+				    $.ajax({
+				        url: "/album_list.aspx?album=" + context.params.id,
+				        success:function(res){
+				            $("#content").html(res);
+				            $(".play_playlist").on('click', function(){
+				                $.ajax({
+				                    url: 'music_queue.aspx/getAlbumPlaylistQueue',
+				                    method:'post',
+				                    contentType: 'application/json',
+				                    dataType: 'json',
+				                    data: '{album_id:' + $(this).data("playlist") + '}',
+				                    success:function(data){
+				                        queue = [];
+				                        for (let i in data['d']){
+				                            queue.push({
+				                                title: data['d'][i]["title"],
+				                                mp3: data['d'][i]["mp3"],
+				                                oga: data['d'][i]["oga"],
+				                            })
+				                        }
+				                        playlist.setPlaylist(queue);
+				                    }
+				                })
+				            });
+				            $(".play_music").on('click', function(){
+				                $.ajax({
+				                    url: 'music_queue.aspx/getMusicQueue',
+				                    method:'post',
+				                    contentType: 'application/json',
+				                    dataType: 'json',
+				                    data: '{music_id:' + $(this).data("music") + '}',
+				                    success:function(data){
+				                        
+				                        playlist.setPlaylist([{
+				                            title: data['d']["title"],
+				                            mp3: data['d']["mp3"],
+				                            oga: data['d']["oga"],
+				                        }]);
+				                        playlist.play();
+				                    }
+				                })
+				            });
+				        }
+				    })
+
+				});
+                
+				this.get('#/artist', function() {
+				    $("#content").load("artist.aspx");
+
+				});
+				this.get('#/artist/:id', function(context) {
+				    console.log(context.params.id);
+				    $.ajax({
+				        url: "/artist_list.aspx?artist=" + context.params.id,
+				        success:function(res){
+				            $("#content").html(res);
+				            $(".play_playlist").on('click', function(){
+				                $.ajax({
+				                    url: 'music_queue.aspx/getArtistPlaylistQueue',
+				                    method:'post',
+				                    contentType: 'application/json',
+				                    dataType: 'json',
+				                    data: '{artist_id:' + $(this).data("playlist") + '}',
+				                    success:function(data){
+				                        queue = [];
+				                        for (let i in data['d']){
+				                            queue.push({
+				                                title: data['d'][i]["title"],
+				                                mp3: data['d'][i]["mp3"],
+				                                oga: data['d'][i]["oga"],
+				                            })
+				                        }
+				                        playlist.setPlaylist(queue);
+				                    }
+				                })
+				            });
+				            $(".play_music").on('click', function(){
+				                $.ajax({
+				                    url: 'music_queue.aspx/getMusicQueue',
+				                    method:'post',
+				                    contentType: 'application/json',
+				                    dataType: 'json',
+				                    data: '{music_id:' + $(this).data("music") + '}',
+				                    success:function(data){
+				                        
+				                        playlist.setPlaylist([{
+				                            title: data['d']["title"],
+				                            mp3: data['d']["mp3"],
+				                            oga: data['d']["oga"],
+				                        }]);
+				                        playlist.play();
+				                    }
+				                })
+				            });
+				        }
+				    })
 
 				});
 			});
@@ -909,3 +1095,4 @@
 </body>
 
 </html>
+

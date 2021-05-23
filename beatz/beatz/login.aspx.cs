@@ -13,7 +13,10 @@ namespace beatz
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["user_id"] != null)
+            {
+                Response.Redirect("/index.aspx");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -31,7 +34,10 @@ namespace beatz
 
             if (rd.HasRows)
             {
-                Response.Write("Login successfull");
+                rd.Read();
+                Session["user_id"] = rd["user_id"];
+                Session["username"] = rd["username"];
+                Response.Redirect("/index.aspx");
             } else
             {
                 Response.Write("Login Failed");
@@ -61,7 +67,9 @@ namespace beatz
             int x = con.ExecuteDML(query);
             if (x > 0)
             {
-                Response.Write("Register Success");
+                Session["user_id"] = i;
+                Session["username"] = username;
+                Response.Redirect("/index.aspx");
             } else
             {
                 Response.Write("Register Denied");
