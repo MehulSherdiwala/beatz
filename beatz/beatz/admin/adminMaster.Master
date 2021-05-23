@@ -59,7 +59,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./playlist.aspx">
-                <i class="fas fa-music text-primary"></i>
+                <i class="fas fa-layer-group text-pink"></i>
                 <span class="nav-link-text">Playlist</span>
               </a>
             </li>

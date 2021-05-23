@@ -12,7 +12,7 @@ namespace beatz.Classes
         SqlConnection con;
         public Connection()
         {
-            con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\ASP.Net\beatz\beatz\beatz\App_Data\beatz1.mdf;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Beatz\beatz\beatz\App_Data\beatz1.mdf;Integrated Security=True");
         }
 
         public void Open()

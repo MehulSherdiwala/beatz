@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace beatz.admin {
-    
-    
-    public partial class index {
+namespace beatz.admin
+{
+
+
+    public partial class index
+    {
     }
 }
