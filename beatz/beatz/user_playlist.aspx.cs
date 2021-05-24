@@ -23,7 +23,7 @@ namespace beatz
             conn.Open();
             int songs = 0;
 
-            string query = "select *, (select count(*) from user_playlist_musics pm where pm.user_playlist_id = p.user_playlist_id) as songs from user_playlist p ";
+            string query = "select *, (select count(*) from user_playlist_musics pm where pm.user_playlist_id = p.user_playlist_id) as songs from user_playlist p where user_id=" + Session["user_id"];
             
             SqlDataReader rd = conn.ExecuteDQL(query);
 

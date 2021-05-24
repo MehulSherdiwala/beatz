@@ -36,7 +36,6 @@
                     <th scope="col">Genre Id</th>
                     <th scope="col">Name</th>
                     <th scope="col">Discription</th>
-                    <th scope="col">Total Songs</th>
                     <th scope="col">Action</th>
                   </tr>
                 </thead>

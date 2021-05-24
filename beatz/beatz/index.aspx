@@ -75,6 +75,30 @@
             bottom: 0;
             right: 0
         }
+        
+        ul li ul.dropdown {
+            min-width: 100%;
+            /* Set width of the dropdown */
+            background: #f2f2f2;
+            display: none;
+			position: absolute;
+            z-index: 999;
+            left: 0;
+        }
+		ul li ul * {
+			padding: 20px;
+		}
+        li:hover ul.dropdown {
+            display: flex;
+			flex-direction: column;
+            /* Display the dropdown */
+        }
+		.tile{
+			color:white;
+		}
+		.tile:hover{
+			color: #00D665;
+		}
     </style>
 </head>
 <body>
@@ -91,8 +115,25 @@
                                 <li><a href="#" title="">Who We Are</a></li>
                             </ul>
                         </div>
-                        <div class="col-xl-4 col-lg-5 col-md-6 mll-auto">
-                            <a href="login.aspx" title="" class="login"><i class="flaticon-user"></i>Login or Register</a>
+                        <div class="col-xl-4 col-lg-5 col-md-6 mll-auto  d-flex align-items-center">
+                            <asp:MultiView ID="MultiView1" runat="server">
+                                <asp:View ID="View1" runat="server">
+                                    <a href="login.aspx" title="" class="login mr-4"><i class="flaticon-user"></i>Login or Register</a>
+                                </asp:View>
+                                <asp:View ID="View2" runat="server">
+                                    <ul class="mr-4">
+								<li>
+									<a class="tile" href="#">
+                                        <asp:Label ID="lbl_username" runat="server"></asp:Label></a>
+									<ul class="dropdown">
+										<li><a href="#/create_playlist">Create Playlist</a></li>
+										<li><a href="#/user_playlist">My Playlist</a></li>
+										<li><a href="logout.aspx">Logout</a></li>
+									</ul>
+								</li>
+							</ul>
+                                </asp:View>
+                            </asp:MultiView>
                             <ul class="social-links">
                                 <li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#" title=""><i class="fab fa-twitter"></i></a></li>
@@ -107,7 +148,7 @@
                 <div class="container">
                     <div class="header-content">
                         <div class="logo">
-                            <a href="index.html" title=""><img src="images/logo.png" alt=""></a>
+                            <a href="#/home" title=""><img src="images/logo.png" alt=""></a>
                         </div>
                         <nav>
                             <ul>
@@ -115,8 +156,6 @@
                                 <li><a href="#/artist" class="authors">Artists</a></li>
                                 <li><a href="#/album">Albums</a></li>
                                 <li><a href="#/genre">Genre</a></li>
-                                <li><a href="#/create_playlist">Craete Playlist</a></li>
-                                <li><a href="#/user_playlist">User Playlist</a></li>
                             </ul>
                         </nav>
                         <a href="#" title="" id="toggle" class="menu-btn"><img src="images/bars.png" alt=""></a>
@@ -138,15 +177,13 @@
 
         </div>
         <section id="content">
+            
             <section class="main-banner overlay">
                 <div class="container">
                     <div class="banner-text text-center">
-                        <h2>Listeners and Community <strong>to Show Their Love</strong></h2>
-                        <p>Automate Your Broadcast, Stream From Anywhere & Track Listeners.</p>
-                        <ul>
-                            <li><a href="donate.html" title="" class="btn-default">Donate Now <span></span></a></li>
-                            <li><a href="about.html" title="" class="btn-default open-music-player"><i class="fa fa-play"></i>Play Latest Episode <span></span></a></li>
-                        </ul>
+                        <h2>Your Favourite Songs <strong>At your Fingertips</strong></h2>
+                        <p>For absolutely free</p>
+                       
                     </div>
                 </div>
             </section>
@@ -213,389 +250,15 @@
                     </div>
                 </div>
             </div>
-
-            <section class="block pt-0">
-                <div class="fixed-bg bg1"></div>
-                <div class="about-section">
-                    <div class="container">
-                        <div class="abt-sec">
-                            <div class="row m-0">
-                                <div class="col-lg-5 p-0">
-                                    <div class="abt-img">
-                                        <img src="images/resources/img1.jpg" alt="" class="w-100">
-                                    </div>
-                                </div>
-                                <div class="col-lg-7 p-0">
-                                    <div class="abt-text">
-                                        <h5 class="rad-status"><i class="flaticon-sound-bars"></i>On Radio 81.1 FM</h5>
-                                        <span>Weekdays 12 PM - 3 PM</span>
-                                        <h2>All the Latest Sounds From Indie Pop to Out There Experimentalism</h2>
-                                        <div class="presented">
-                                            <h3>Presented By:</h3>
-                                            <ul>
-                                                <li><a href="#" title="">Rhian Todhunter</a></li>
-                                                <li><a href="#" title="">Will Backler + Jackson</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <section class="block pb-0">
-                    <div class="container">
-                        <div class="section-title text-center">
-                            <span>Enjoy some new awesome music</span>
-                            <h2>PODCAST <span>SERIES</span></h2>
-                            <i class="flaticon-playlist"></i>
-                        </div>
-                        <div class="podcast-series">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="pod-series">
-                                        <div class="pod-thumbnail">
-                                            <img src="images/resources/img2.jpg" alt="" class="w-100">
-                                            <a href="#" title="" class="download"><i class="fa fa-download"></i></a>
-                                        </div>
-                                        <div class="pod-info">
-                                            <h3>Fashion Is Life</h3>
-                                            <h4>20 Episodes</h4>
-                                            <ul class="songs-list">
-                                                <li>
-                                                    <div class="mm-audio">
-                                                        <audio controls src="http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"></audio>
-                                                    </div>
-                                                    <h3>The Moorditj Mag Podcast: Ep #20</h3>
-                                                </li>
-                                                <li>
-                                                    <div class="mm-audio">
-                                                        <audio controls src="http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3"></audio>
-                                                    </div>
-                                                    <h3>Week’s edition of the Moorditj: Ep #19</h3>
-                                                </li>
-                                                <li>
-                                                    <div class="mm-audio">
-                                                        <audio controls src="http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3"></audio>
-                                                    </div>
-                                                    <h3>Jim and Jodi talking: Ep #18</h3>
-                                                </li>
-                                                <li>
-                                                    <div class="mm-audio">
-                                                        <audio controls src="http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3"></audio>
-                                                    </div>
-                                                    <h3>Who Loves Everything: Ep #17</h3>
-                                                </li>
-                                            </ul>
-                                            <a href="podcast-details.html" title="" class="view-btn">View All Episodes  <i class="fa fa-angle-right"></i></a>
-                                        </div><!--pod-info end-->
-                                    </div><!--pod-series end-->
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="pod-series">
-                                        <div class="pod-thumbnail">
-                                            <img src="images/resources/img3.jpg" alt="" class="w-100">
-                                            <a href="#" title="" class="download"><i class="fa fa-download"></i></a>
-                                        </div><!--pod-thumbnail end-->
-                                        <div class="pod-info">
-                                            <h3>Education Podcast</h3>
-                                            <h4>20 Episodes</h4>
-                                            <ul class="songs-list">
-                                                <li>
-                                                    <div class="mm-audio">
-                                                        <audio controls src="http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"></audio>
-                                                    </div>
-                                                    <h3>The Moorditj Mag Podcast: Ep #20</h3>
-                                                </li>
-                                                <li>
-                                                    <div class="mm-audio">
-                                                        <audio controls src="http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3"></audio>
-                                                    </div>
-                                                    <h3>Week’s edition of the Moorditj: Ep #19</h3>
-                                                </li>
-                                                <li>
-                                                    <div class="mm-audio">
-                                                        <audio controls src="http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3"></audio>
-                                                    </div>
-                                                    <h3>Jim and Jodi talking: Ep #18</h3>
-                                                </li>
-                                                <li>
-                                                    <div class="mm-audio">
-                                                        <audio controls src="http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3"></audio>
-                                                    </div>
-                                                    <h3>Who Loves Everything: Ep #17</h3>
-                                                </li>
-                                            </ul>
-                                            <a href="podcast-details.html" title="" class="view-btn">View All Episodes  <i class="fa fa-angle-right"></i></a>
-                                        </div><!--pod-info end-->
-                                    </div><!--pod-series end-->
-                                </div>
-                            </div>
-                        </div><!--podcast-series end-->
-                    </div>
-                </section>
-            </section>
-
-            <section class="block">
-                <div class="container">
-                    <div class="section-title text-center">
-                        <span>Enjoy some new awesome music</span>
-                        <h2>PODCAST <span>Episodes</span></h2>
-                        <i class="flaticon-playlist"></i>
-                    </div><!--section-title end-->
-                    <div class="podcast-episodes">
-                        <div class="podcast-epd">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4">
-                                    <div class="podcast-thumb">
-                                        <img src="images/resources/img4.jpg" alt="" class="w-100">
-                                    </div><!--podcast-thumb end-->
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="podcast-ep-info">
-                                        <ul class="pod-meta">
-                                            <li>
-                                                <i class="flaticon-playlist"></i>
-                                                Episode 12
-                                            </li>
-                                            <li>
-                                                <i class="flaticon-date"></i>
-                                                September 3, 2018
-                                            </li>
-                                        </ul>
-                                        <h2>A short wave goodbye for my good friend</h2>
-                                        <div class="music-player">
-                                            <audio controls src="http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3"></audio>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Ae nean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium...</p>
-                                    </div><!--podcast-ep-info end-->
-                                </div>
-                            </div>
-                        </div><!--podcast-epd end-->
-                        <div class="podcast-epd">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4">
-                                    <div class="podcast-thumb">
-                                        <img src="images/resources/img5.jpg" alt="" class="w-100">
-                                    </div><!--podcast-thumb end-->
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="podcast-ep-info">
-                                        <ul class="pod-meta">
-                                            <li>
-                                                <i class="flaticon-playlist"></i>
-                                                Episode 12
-                                            </li>
-                                            <li>
-                                                <i class="flaticon-date"></i>
-                                                September 3, 2018
-                                            </li>
-                                        </ul>
-                                        <h2>Goodbye for my good friend Francisco</h2>
-                                        <div class="music-player">
-                                            <audio controls src="http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3"></audio>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Ae nean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium...</p>
-                                    </div><!--podcast-ep-info end-->
-                                </div>
-                            </div>
-                        </div><!--podcast-epd end-->
-                        <div class="podcast-epd">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4">
-                                    <div class="podcast-thumb">
-                                        <img src="images/resources/img6.jpg" alt="" class="w-100">
-                                    </div><!--podcast-thumb end-->
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="podcast-ep-info">
-                                        <ul class="pod-meta">
-                                            <li>
-                                                <i class="flaticon-playlist"></i>
-                                                Episode 12
-                                            </li>
-                                            <li>
-                                                <i class="flaticon-date"></i>
-                                                September 3, 2018
-                                            </li>
-                                        </ul>
-                                        <h2>Glazing handmade white china pot</h2>
-                                        <div class="music-player">
-                                            <audio controls src="http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3"></audio>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Ae nean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium...</p>
-                                    </div><!--podcast-ep-info end-->
-                                </div>
-                            </div>
-                        </div><!--podcast-epd end-->
-                        <div class="podcast-epd">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4">
-                                    <div class="podcast-thumb">
-                                        <img src="images/resources/img7.jpg" alt="" class="w-100">
-                                    </div><!--podcast-thumb end-->
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="podcast-ep-info">
-                                        <ul class="pod-meta">
-                                            <li>
-                                                <i class="flaticon-playlist"></i>
-                                                Episode 12
-                                            </li>
-                                            <li>
-                                                <i class="flaticon-date"></i>
-                                                September 3, 2018
-                                            </li>
-                                        </ul>
-                                        <h2>Lemon juice for the next generations to come</h2>
-                                        <div class="music-player">
-                                            <audio controls src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3"></audio>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Ae nean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium...</p>
-                                    </div><!--podcast-ep-info end-->
-                                </div>
-                            </div>
-                        </div><!--podcast-epd end-->
-                        <div class="podcast-epd">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4">
-                                    <div class="podcast-thumb">
-                                        <img src="images/resources/img8.jpg" alt="" class="w-100">
-                                    </div><!--podcast-thumb end-->
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="podcast-ep-info">
-                                        <ul class="pod-meta">
-                                            <li>
-                                                <i class="flaticon-playlist"></i>
-                                                Episode 12
-                                            </li>
-                                            <li>
-                                                <i class="flaticon-date"></i>
-                                                September 3, 2018
-                                            </li>
-                                        </ul>
-                                        <h2>A short wave goodbye for my good friend</h2>
-                                        <div class="music-player">
-                                            <audio controls src="http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3"></audio>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Ae nean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium...</p>
-                                    </div><!--podcast-ep-info end-->
-                                </div>
-                            </div>
-                        </div><!--podcast-epd end-->
-                    </div><!--podcast-episodes end-->
-                    <div class="load-more text-center">
-                        <a href="podcast-details.html" title="" class="btn-default"><i class="flaticon-reload"></i>Load More <span></span></a>
-                    </div><!--load-more end-->
-                </div>
-            </section>
-
-            <section class="block">
-                <div class="fixed-bg bg2 overlay-bg"></div>
-                <div class="container">
-                    <div class="section-title white text-center">
-                        <span>Enjoy some new awesome music</span>
-                        <h2>Latest <span>News</span></h2>
-                        <i class="flaticon-playlist"></i>
-                    </div><!--section-title end-->
-                    <div class="blog-posts">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="post">
-                                    <span class="category">Radio Production</span>
-                                    <h2 class="post-title"><a href="blog-details.html" title="">10 Ways to Get New Listeners Using Social Media</a></h2>
-                                    <img src="images/resources/img9.jpg" alt="" class="w-100">
-                                    <p>Lorem ipsum dolor sit amet conc sit n sit namo, allegro sustenuto spres Lore to ipsum dolo e liemat.</p>
-                                    <a href="#" title="" class="posted-by"><span>  By  Harry Robinson</span> - <strong>24.04.20</strong></a>
-                                </div><!--post end-->
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="post">
-                                    <span class="category">Radio Tips</span>
-                                    <h2 class="post-title"><a href="blog-details.html" title="">Collider and the Search for the Higgs-Boson</a></h2>
-                                    <img src="images/resources/img10.jpg" alt="" class="w-100">
-                                    <p>Lorem ipsum dolor sit amet conc sit n sit namo, allegro sustenuto spres Lore to ipsum dolo e liemat.</p>
-                                    <a href="#" title="" class="posted-by"><span>  By  Harry Robinson</span> - <strong>24.04.20</strong></a>
-                                </div><!--post end-->
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="post">
-                                    <span class="category">News</span>
-                                    <h2 class="post-title"><a href="blog-details.html" title="">Pluto and the Icy Outer Solar System</a></h2>
-                                    <img src="images/resources/img11.jpg" alt="" class="w-100">
-                                    <p>Lorem ipsum dolor sit amet conc sit n sit namo, allegro sustenuto spres Lore to ipsum dolo e liemat.</p>
-                                    <a href="#" title="" class="posted-by"><span>  By  Harry Robinson</span> - <strong>24.04.20</strong></a>
-                                </div><!--post end-->
-                            </div>
-                        </div>
-                    </div><!--blog-posts end-->
-                </div>
-            </section>
-
             <section class="block pb-0">
-                <div class="container-fluid p-0">
-                    <h3 class="hd-title"><a href="#" title="">@softcircles</a></h3>
-                    <div class="insta-section">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-4 col-4">
-                                <div class="insta">
-                                    <img src="images/resources/img12.jpg" alt="" class="w-100">
-                                    <ul class="lzt">
-                                        <li><i class="flaticon-heart-1"></i> 12</li>
-                                        <li><i class="flaticon-comment"></i> 45</li>
-                                    </ul>
-                                </div><!--insta end-->
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-4">
-                                <div class="insta">
-                                    <img src="images/resources/img13.jpg" alt="" class="w-100">
-                                    <ul class="lzt">
-                                        <li><i class="flaticon-heart-1"></i> 12</li>
-                                        <li><i class="flaticon-comment"></i> 45</li>
-                                    </ul>
-                                </div><!--insta end-->
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-4">
-                                <div class="insta">
-                                    <img src="images/resources/img14.jpg" alt="" class="w-100">
-                                    <ul class="lzt">
-                                        <li><i class="flaticon-heart-1"></i> 12</li>
-                                        <li><i class="flaticon-comment"></i> 45</li>
-                                    </ul>
-                                </div><!--insta end-->
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-4">
-                                <div class="insta">
-                                    <img src="images/resources/img15.jpg" alt="" class="w-100">
-                                    <ul class="lzt">
-                                        <li><i class="flaticon-heart-1"></i> 12</li>
-                                        <li><i class="flaticon-comment"></i> 45</li>
-                                    </ul>
-                                </div><!--insta end-->
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-4">
-                                <div class="insta">
-                                    <img src="images/resources/img16.jpg" alt="" class="w-100">
-                                    <ul class="lzt">
-                                        <li><i class="flaticon-heart-1"></i> 12</li>
-                                        <li><i class="flaticon-comment"></i> 45</li>
-                                    </ul>
-                                </div><!--insta end-->
-                            </div>
-                            <div class="col-md-2 col-sm-4 col-4">
-                                <div class="insta">
-                                    <img src="images/resources/img17.jpg" alt="" class="w-100">
-                                    <ul class="lzt">
-                                        <li><i class="flaticon-heart-1"></i> 12</li>
-                                        <li><i class="flaticon-comment"></i> 45</li>
-                                    </ul>
-                                </div><!--insta end-->
-                            </div>
-                        </div>
-                    </div><!--insta-section end-->
+            <div class="container">
+                <div class="podcast-series">
+                    <div class="row" id="playlists" runat="server">
+
+                    </div>
                 </div>
             </section>
+
         </section>
 
         <section class="newsletter-sec">
@@ -836,11 +499,57 @@
 			var app = $.sammy(function() {
 
 			    this.get('#/', function() {
-			        $("#content").load("home.html");
+			        $("#content").load("home.aspx");
 				});
 
 				this.get('#/home', function() {
-					$("#content").load("home.html");
+					$("#content").load("home.aspx");
+
+				});
+				this.get('#/playlist/:id', function (context) {
+				    $.ajax({
+				        url: "/playlist_list.aspx?playlist=" + context.params.id,
+				        success: function (res) {
+				            $("#content").html(res);
+				            $(".play_playlist").on('click', function () {
+				                $.ajax({
+				                    url: 'music_queue.aspx/getPlaylistQueue',
+				                    method: 'post',
+				                    contentType: 'application/json',
+				                    dataType: 'json',
+				                    data: '{playlist_id:' + $(this).data("playlist") + '}',
+				                    success: function (data) {
+				                        queue = [];
+				                        for (let i in data['d']) {
+				                            queue.push({
+				                                title: data['d'][i]["title"],
+				                                mp3: data['d'][i]["mp3"],
+				                                oga: data['d'][i]["oga"],
+				                            })
+				                        }
+				                        playlist.setPlaylist(queue);
+				                    }
+				                })
+				            });
+				            $(".play_music").on('click', function () {
+				                $.ajax({
+				                    url: 'music_queue.aspx/getMusicQueue',
+				                    method: 'post',
+				                    contentType: 'application/json',
+				                    dataType: 'json',
+				                    data: '{music_id:' + $(this).data("music") + '}',
+				                    success: function (data) {
+
+				                        playlist.setPlaylist([{
+				                            title: data['d']["title"],
+				                            mp3: data['d']["mp3"],
+				                            oga: data['d']["oga"],
+				                        }]);
+				                    }
+				                })
+				            });
+				        }
+				    })
 
 				});
 				this.get('#/create_playlist', function() {

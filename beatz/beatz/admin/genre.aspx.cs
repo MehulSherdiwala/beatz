@@ -27,7 +27,6 @@ namespace beatz.admin
                 html.Append("<td>" + rd["genre_id"] + "</td>");
                 html.Append("<td>" + rd["genre_name"] + "</td>");
                 html.Append("<td>" + rd["genre_description"] + "</td>");
-                html.Append("<td> 0 </td>");
                 html.Append("<td><a href='edit_genre.aspx?id=" + rd["genre_id"] + "' class='btn btn-sm btn-success'><i class='fa fa-pencil-alt'></i></a> <a href='delete_genre.aspx?id=" + rd["genre_id"] + "' class='btn btn-sm btn-danger'><i class='fa fa-trash-alt'></i></a></td>");
                 html.Append("</tr>");
             }

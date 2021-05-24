@@ -23,7 +23,9 @@
             </div>
              <div class="card-body d-flex justify-content-between">
                  <p class="h3">Genre</p>
-                 <p class="h3">10</p>
+                 <p class="h3">
+                     <asp:Label ID="lbl_genre" runat="server"></asp:Label>
+                 </p>
              </div>
           </div>
           <div class="col-3 card" style="background-color:papayawhip;">
@@ -32,7 +34,10 @@
             </div>
              <div class="card-body d-flex justify-content-between">
                  <p class="h3">Albums</p>
-                 <p class="h3">10</p>
+                 <p class="h3">
+                     <asp:Label ID="lbl_album" runat="server"></asp:Label>
+
+                 </p>
              </div>
           </div>
           <div class="col-3 card" style="background-color:lavenderblush;">
@@ -41,7 +46,8 @@
             </div>
              <div class="card-body d-flex justify-content-between">
                  <p class="h3">Playlist</p>
-                 <p class="h3">10</p>
+                 <p class="h3">
+                     <asp:Label ID="lbl_playlist" runat="server"></asp:Label></p>
              </div>
           </div>
           
@@ -53,7 +59,8 @@
             </div>
              <div class="card-body d-flex justify-content-between">
                  <p class="h3">Music</p>
-                 <p class="h3">10</p>
+                 <p class="h3">
+                     <asp:Label ID="lbl_music" runat="server"></asp:Label></p>
              </div>
           </div>
           <div class="col-3 card" style="background-color:lightgray;">
@@ -62,7 +69,8 @@
             </div>
              <div class="card-body d-flex justify-content-between">
                  <p class="h3">Artists</p>
-                 <p class="h3">10</p>
+                 <p class="h3">
+                     <asp:Label ID="lbl_artist" runat="server"></asp:Label></p>
              </div>
           </div>
       </div>

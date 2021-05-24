@@ -17,7 +17,7 @@ namespace beatz
             Connection conn = new Connection();
             conn.Open();
 
-            string query = "select *, (select count(*) from music m where CONVERT(VARCHAR(MAX),m.artist_id) like '%' +CONVERT(VARCHAR(MAX),a.artist_id) +'%') as songs from artist a";
+            string query = "select *, (select count(*) from music m where deleted_at is null and CONVERT(VARCHAR(MAX),m.artist_id) like '%' +CONVERT(VARCHAR(MAX),a.artist_id) +'%') as songs from artist a";
 
             SqlDataReader rd = conn.ExecuteDQL(query);
 

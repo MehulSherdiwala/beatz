@@ -17,7 +17,7 @@ namespace beatz
             Connection conn = new Connection();
             conn.Open();
 
-            string query = "select *, (select count(*) from album m where CONVERT(VARCHAR(MAX),m.album_id)=CONVERT(VARCHAR(MAX),g.album_id)) as songs from album g where deleted_at is null";
+            string query = "select *, (select count(*) from album m where  deleted_at is null and CONVERT(VARCHAR(MAX),m.album_id)=CONVERT(VARCHAR(MAX),g.album_id)) as songs from album g where deleted_at is null";
 
             SqlDataReader rd = conn.ExecuteDQL(query);
 

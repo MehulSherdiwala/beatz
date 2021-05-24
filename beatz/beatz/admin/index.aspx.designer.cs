@@ -7,11 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace beatz.admin
-{
-
-
-    public partial class index
-    {
+namespace beatz.admin {
+    
+    
+    public partial class index {
+        
+        /// <summary>
+        /// lbl_genre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_genre;
+        
+        /// <summary>
+        /// lbl_album control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_album;
+        
+        /// <summary>
+        /// lbl_playlist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_playlist;
+        
+        /// <summary>
+        /// lbl_music control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_music;
+        
+        /// <summary>
+        /// lbl_artist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_artist;
     }
 }
